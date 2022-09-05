@@ -7,7 +7,7 @@ A profit and loss app built using HTML, CSS & VanillaJS
 
 ## Demo
 
-[Live view](https://profit-and-loss-app.sahitm1.repl.co)) of the project.
+[Live view](https://profitlossapp11.netlify.app/) of the project.
 
 
 

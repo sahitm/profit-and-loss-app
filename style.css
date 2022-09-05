@@ -1,10 +1,26 @@
 body{
-display: flex;
-flex-direction: column;
-height: 100vh;
-align-items: center;
-justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 900;
+  text-transform: uppercase;
 }
+
+input,button{
+  font-size: 1.5rem;
+}
+
+#Calculate {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  padding: 0 1rem;
+}
+
+
 /**links **/
 .link {
     text-decoration: none;
