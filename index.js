@@ -11,12 +11,12 @@ function calculateProfitLoss(Intial,Quantity,Current){
         var profit = (Current-Intial)*Quantity
         var profitPercentage = (profit / Intial)*100
         console.log(profit,'---profit---',profitPercentage)
-        message.innerHTML = `your profit is ${profit} and your profit percentage is ${profitPercentage.toFixed(2)}`
+        message.innerHTML = `your profit is ${profit} and your profit percentage is ${profitPercentage.toFixed(2)}%`
     }else if(Intial > Current ){
         var loss = (Intial-Current)*Quantity
         var lossPercentage = (loss / Intial)*100
         console.log(loss,'---loss---',lossPercentage)
-        message.innerHTML = `your loss is ${loss} and your loss percentage is ${lossPercentage.toFixed(2)}`
+        message.innerHTML = `your loss is ${loss} and your loss percentage is ${lossPercentage.toFixed(2)}%`
     }else{
         // Intial == Current
         message.innerHTML = `Neither Profit Nor Loss`
