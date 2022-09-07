@@ -28,8 +28,9 @@ function handleClick(){
     console.log(IntialPrice.value,QuantityofStocks.value,CurrentPrice.value)
     console.log(Boolean(IntialPrice.value) ,Boolean(QuantityofStocks.value),Boolean(CurrentPrice.value))
 
-    if(Boolean(IntialPrice.value) == false || Boolean(QuantityofStocks.value) == false || Boolean(CurrentPrice.value) == false){
-        alert('Please fill out all Fields')
+    if(Number(IntialPrice.value) <= 0 || Number(QuantityofStocks.value) <= 0 || Number(CurrentPrice.value) <= 0){
+            console.log(Number(IntialPrice.value),Number(QuantityofStocks.value),Number(CurrentPrice.value))
+            message.innerHTML = `Please fill out all Fields and with value greater than zero`
     }else{
         calculateProfitLoss(Number(IntialPrice.value),Number(QuantityofStocks.value),Number(CurrentPrice.value))
     }
